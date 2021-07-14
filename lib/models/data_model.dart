@@ -11,5 +11,6 @@ class Launch {
     this.date = DateTime.fromMillisecondsSinceEpoch(json['date_unix'] * 1000);
     this.imageSmall = json['links']['patch']['small'];
     this.imageLarge = json['links']['patch']['large'];
+    this.isExpanded = false;
   }
 }
